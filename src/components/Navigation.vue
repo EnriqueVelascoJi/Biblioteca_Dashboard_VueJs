@@ -59,6 +59,7 @@
             v-for="item in itemsSingle"
             :key="item.title"
             link
+            :to="item.path"
           >
             <v-list-item-icon>
               <v-icon>{{ item.icon }}</v-icon>
@@ -85,6 +86,7 @@
               v-for="child in item.items"
               :key="child.title"
               link
+              :to="child.path"
               
             >
               <v-list-item-content>
@@ -117,40 +119,41 @@ export default {
         return {
           drawer: true,
           itemsSingle: [
-            { title: 'Socios', icon: 'mdi-account' },
-            { title: 'Libros', icon: 'mdi-book-open-variant' },
+            { title: 'Home', icon: 'mdi-home', path: '/' },
+            { title: 'Socios', icon: 'mdi-account', path: '/socio' },
+            { title: 'Libros', icon: 'mdi-book-open-variant', path: '/libros' },
           ],
           itemsMultiple: [
             {
               action: 'mdi-clipboard-text',
               items: [
-                {title: 'Registrar Préstamo', icon: 'mdi-cart' },
-                {title: 'Registrar Renta', icon: 'mdi-printer' },
-                {title: 'Registrar Venta', icon: 'mdi-printer' },
+                {title: 'Registrar Préstamo', icon: 'mdi-cart', path: '/registar_prestamo' },
+                {title: 'Registrar Renta', icon: 'mdi-printer', path: '/registrar_renta' },
+                {title: 'Registrar Venta', icon: 'mdi-printer', path: '/registrar_venta' },
               ],
               title: 'Registros',
             },
             {
               action: 'mdi-content-save',
               items: [
-                {title: 'Ficha Préstamo', icon: 'mdi-folder' },
-                {title: 'Ficha Renta', icon: 'mdi-folder' },
+                {title: 'Ficha Préstamo', icon: 'mdi-folder', path: 'fichas_prestamo' },
+                {title: 'Ficha Renta', icon: 'mdi-folder', path: 'fichas_renta' },
               ],
               title: 'Fichas',
             },
             {
               action: 'mdi-cash-100',
               items: [
-                {title: 'Historial Ventas', icon: 'mdi-chart-timeline-variant' },
-                {title: 'Gráficos', icon: 'mdi-chart-bubble' },
+                {title: 'Historial Ventas', icon: 'mdi-chart-timeline-variant', path: 'historial_ventas' },
+                {title: 'Gráficos', icon: 'mdi-chart-bubble', path: 'graficos' },
               ],
               title: 'Ventas',
             },
             {
               action: 'mdi-tag',
               items: [
-                {title: 'Multas', icon: 'mdi-pin' },
-                {title: 'Lista de espera', icon: 'mdi-folder-clock' },
+                {title: 'Multas', icon: 'mdi-pin', path: 'multas' },
+                {title: 'Lista de espera', icon: 'mdi-folder-clock', path: 'lista_espera' },
               ],
               title: 'Otros',
             },

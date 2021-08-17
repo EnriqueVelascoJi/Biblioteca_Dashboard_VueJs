@@ -2,7 +2,7 @@
   <v-container>
         <v-data-table
     :headers="headers"
-    :items="desserts"
+    :items="socios"
     sort-by="calories"
     class="elevation-1"
     >
@@ -162,33 +162,31 @@ export default {
             dialog: false,
             dialogDelete: false,
             headers: [
-                {
-                text: 'Dessert (100g serving)',
-                align: 'start',
-                sortable: false,
-                value: 'name',
-                },
-                { text: 'Calories', value: 'calories' },
-                { text: 'Fat (g)', value: 'fat' },
-                { text: 'Carbs (g)', value: 'carbs' },
-                { text: 'Protein (g)', value: 'protein' },
+                { text: 'Nombre', value: 'nombre'},
+                { text: 'Identificador', value: 'identificador' },
+                { text: 'Teléfono', value: 'telefono', sortable: false  },
+                { text: 'Email', value: 'email', sortable: false  },
+                { text: 'Reputación', value: 'reputacion', sortable: false  },
+                { text: 'Puntos', value: 'puntos' },
                 { text: 'Actions', value: 'actions', sortable: false },
             ],
-            desserts: [],
+            socios: [],
             editedIndex: -1,
             editedItem: {
-                name: '',
-                calories: 0,
-                fat: 0,
-                carbs: 0,
-                protein: 0,
+                nombre: '',
+                identificador: 0,
+                telefono: '',
+                email: 0,
+                reputacion: 0,
+                puntos: 0,
             },
             defaultItem: {
-                name: '',
-                calories: 0,
-                fat: 0,
-                carbs: 0,
-                protein: 0,
+                nombre: '',
+                identificador: 0,
+                telefono: '',
+                email: 0,
+                reputacion: 0,
+                puntos: 0,
             },
         }
     },
@@ -211,94 +209,184 @@ export default {
     },
     methods: {
       initialize () {
-        this.desserts = [
+        this.socios = [
           {
-            name: 'Frozen Yogurt',
-            calories: 159,
-            fat: 6.0,
-            carbs: 24,
-            protein: 4.0,
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Mala',
+            puntos: 3,
           },
           {
-            name: 'Ice cream sandwich',
-            calories: 237,
-            fat: 9.0,
-            carbs: 37,
-            protein: 4.3,
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Mala',
+            puntos: 3,
           },
           {
-            name: 'Eclair',
-            calories: 262,
-            fat: 16.0,
-            carbs: 23,
-            protein: 6.0,
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Mala',
+            puntos: 3,
           },
           {
-            name: 'Cupcake',
-            calories: 305,
-            fat: 3.7,
-            carbs: 67,
-            protein: 4.3,
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Mala',
+            puntos: 3,
           },
           {
-            name: 'Gingerbread',
-            calories: 356,
-            fat: 16.0,
-            carbs: 49,
-            protein: 3.9,
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Buena',
+            puntos: 3,
           },
           {
-            name: 'Jelly bean',
-            calories: 375,
-            fat: 0.0,
-            carbs: 94,
-            protein: 0.0,
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Buena',
+            puntos: 3,
           },
           {
-            name: 'Lollipop',
-            calories: 392,
-            fat: 0.2,
-            carbs: 98,
-            protein: 0,
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Buena',
+            puntos: 3,
           },
           {
-            name: 'Honeycomb',
-            calories: 408,
-            fat: 3.2,
-            carbs: 87,
-            protein: 6.5,
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Buena',
+            puntos: 3,
           },
           {
-            name: 'Donut',
-            calories: 452,
-            fat: 25.0,
-            carbs: 51,
-            protein: 4.9,
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Buena',
+            puntos: 3,
           },
           {
-            name: 'KitKat',
-            calories: 518,
-            fat: 26.0,
-            carbs: 65,
-            protein: 7,
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Buena',
+            puntos: 3,
+          },
+          {
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Buena',
+            puntos: 3,
+          },
+          {
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Buena',
+            puntos: 3,
+          },
+          {
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Buena',
+            puntos: 3,
+          },
+          {
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Buena',
+            puntos: 3,
+          },
+          {
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Buena',
+            puntos: 3,
+          },
+          {
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Buena',
+            puntos: 3,
+          },
+          {
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Buena',
+            puntos: 3,
+          },
+          {
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Buena',
+            puntos: 3,
+          },
+          {
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Buena',
+            puntos: 3,
+          },
+          {
+            nombre: 'Enrique Velasco Jimenez',
+            identificador: '2019640343',
+            telefono: '5510007710',
+            email: 'enriquevel_233@gmail.com',
+            reputacion: 'Buena',
+            puntos: 3,
           },
         ]
       },
 
       editItem (item) {
-        this.editedIndex = this.desserts.indexOf(item)
+        this.editedIndex = this.socios.indexOf(item)
         this.editedItem = Object.assign({}, item)
         this.dialog = true
       },
 
       deleteItem (item) {
-        this.editedIndex = this.desserts.indexOf(item)
+        this.editedIndex = this.socios.indexOf(item)
         this.editedItem = Object.assign({}, item)
         this.dialogDelete = true
       },
 
       deleteItemConfirm () {
-        this.desserts.splice(this.editedIndex, 1)
+        this.socios.splice(this.editedIndex, 1)
         this.closeDelete()
       },
 
@@ -320,9 +408,9 @@ export default {
 
       save () {
         if (this.editedIndex > -1) {
-          Object.assign(this.desserts[this.editedIndex], this.editedItem)
+          Object.assign(this.socios[this.editedIndex], this.editedItem)
         } else {
-          this.desserts.push(this.editedItem)
+          this.socios.push(this.editedItem)
         }
         this.close()
       },
