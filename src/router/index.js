@@ -3,6 +3,9 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
 import Socio from '../views/Socio.vue'
+import Libro from '../views/Libro.vue'
+import Multa from '../views/Multa.vue'
+import ListaEsepra from '../views/ListaEspera.vue'
 
 Vue.use(VueRouter)
 
@@ -16,6 +19,21 @@ const routes = [
     path: '/socio',
     name: 'Socio',
     component: Socio
+  },
+  {
+    path: '/libro',
+    name: 'Libro',
+    component: Libro
+  },
+  {
+    path: '/multa',
+    name: 'Multa',
+    component: Multa
+  },
+  {
+    path: '/lista_espera',
+    name: 'ListaEsepra',
+    component: ListaEsepra
   },
   {
     path: '/about',

@@ -1,7 +1,7 @@
 <template>
   <nav>
     <v-app-bar
-      color="blue-grey lighten-1"
+      color="blue-grey darken-1"
       dark
       app
       
@@ -53,6 +53,8 @@
         class=""
         app
         bottom
+        color="blue-grey darken-1"
+        dark
         >
         <v-list>
             <v-list-item
@@ -121,7 +123,7 @@ export default {
           itemsSingle: [
             { title: 'Home', icon: 'mdi-home', path: '/' },
             { title: 'Socios', icon: 'mdi-account', path: '/socio' },
-            { title: 'Libros', icon: 'mdi-book-open-variant', path: '/libros' },
+            { title: 'Libros', icon: 'mdi-book-open-variant', path: '/libro' },
           ],
           itemsMultiple: [
             {
@@ -136,15 +138,15 @@ export default {
             {
               action: 'mdi-content-save',
               items: [
-                {title: 'Ficha Préstamo', icon: 'mdi-folder', path: 'fichas_prestamo' },
-                {title: 'Ficha Renta', icon: 'mdi-folder', path: 'fichas_renta' },
+                {title: 'Ficha Préstamo', icon: 'mdi-folder', path: '/fichas_prestamo' },
+                {title: 'Ficha Renta', icon: 'mdi-folder', path: '/fichas_renta' },
               ],
               title: 'Fichas',
             },
             {
               action: 'mdi-cash-100',
               items: [
-                {title: 'Historial Ventas', icon: 'mdi-chart-timeline-variant', path: 'historial_ventas' },
+                {title: 'Historial Ventas', icon: 'mdi-chart-timeline-variant', path: '/historial_ventas' },
                 {title: 'Gráficos', icon: 'mdi-chart-bubble', path: 'graficos' },
               ],
               title: 'Ventas',
@@ -152,8 +154,8 @@ export default {
             {
               action: 'mdi-tag',
               items: [
-                {title: 'Multas', icon: 'mdi-pin', path: 'multas' },
-                {title: 'Lista de espera', icon: 'mdi-folder-clock', path: 'lista_espera' },
+                {title: 'Multas', icon: 'mdi-pin', path: '/multa' },
+                {title: 'Lista de espera', icon: 'mdi-folder-clock', path: '/lista_espera' },
               ],
               title: 'Otros',
             },
