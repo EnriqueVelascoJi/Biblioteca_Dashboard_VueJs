@@ -6,6 +6,9 @@ import Socio from '../views/Socio.vue'
 import Libro from '../views/Libro.vue'
 import Multa from '../views/Multa.vue'
 import ListaEsepra from '../views/ListaEspera.vue'
+import Venta from '../views/Venta.vue'
+import FichasPrestamo from '../views/FichasPrestamo.vue'
+import FichasRenta from '../views/FichasRenta.vue'
 
 Vue.use(VueRouter)
 
@@ -16,17 +19,17 @@ const routes = [
     component: Home
   },
   {
-    path: '/socio',
+    path: '/socios',
     name: 'Socio',
     component: Socio
   },
   {
-    path: '/libro',
+    path: '/libros',
     name: 'Libro',
     component: Libro
   },
   {
-    path: '/multa',
+    path: '/multas',
     name: 'Multa',
     component: Multa
   },
@@ -34,6 +37,21 @@ const routes = [
     path: '/lista_espera',
     name: 'ListaEsepra',
     component: ListaEsepra
+  },
+  {
+    path: '/fichas_renta',
+    name: 'FichasRenta',
+    component: FichasRenta
+  },
+  {
+    path: '/fichas_prestamo',
+    name: 'FichasPrestamo',
+    component: FichasPrestamo
+  },
+  {
+    path: '/ventas',
+    name: 'Venta',
+    component: Venta
   },
   {
     path: '/about',

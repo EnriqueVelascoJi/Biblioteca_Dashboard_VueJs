@@ -1,7 +1,6 @@
 <template>
   <nav>
     <v-app-bar
-      color="blue-grey darken-1"
       dark
       app
       
@@ -53,7 +52,6 @@
         class=""
         app
         bottom
-        color="blue-grey darken-1"
         dark
         >
         <v-list>
@@ -122,8 +120,8 @@ export default {
           drawer: true,
           itemsSingle: [
             { title: 'Home', icon: 'mdi-home', path: '/' },
-            { title: 'Socios', icon: 'mdi-account', path: '/socio' },
-            { title: 'Libros', icon: 'mdi-book-open-variant', path: '/libro' },
+            { title: 'Socios', icon: 'mdi-account', path: '/socios' },
+            { title: 'Libros', icon: 'mdi-book-open-variant', path: '/libros' },
           ],
           itemsMultiple: [
             {
@@ -146,7 +144,7 @@ export default {
             {
               action: 'mdi-cash-100',
               items: [
-                {title: 'Historial Ventas', icon: 'mdi-chart-timeline-variant', path: '/historial_ventas' },
+                {title: 'Historial Ventas', icon: 'mdi-chart-timeline-variant', path: '/ventas' },
                 {title: 'Gráficos', icon: 'mdi-chart-bubble', path: 'graficos' },
               ],
               title: 'Ventas',
@@ -154,7 +152,7 @@ export default {
             {
               action: 'mdi-tag',
               items: [
-                {title: 'Multas', icon: 'mdi-pin', path: '/multa' },
+                {title: 'Multas', icon: 'mdi-pin', path: '/multas' },
                 {title: 'Lista de espera', icon: 'mdi-folder-clock', path: '/lista_espera' },
               ],
               title: 'Otros',
