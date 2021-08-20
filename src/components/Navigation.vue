@@ -127,7 +127,7 @@ export default {
             {
               action: 'mdi-clipboard-text',
               items: [
-                {title: 'Registrar Préstamo', icon: 'mdi-cart', path: '/registar_prestamo' },
+                {title: 'Registrar Préstamo', icon: 'mdi-cart', path: '/registrar_prestamo' },
                 {title: 'Registrar Renta', icon: 'mdi-printer', path: '/registrar_renta' },
                 {title: 'Registrar Venta', icon: 'mdi-printer', path: '/registrar_venta' },
               ],

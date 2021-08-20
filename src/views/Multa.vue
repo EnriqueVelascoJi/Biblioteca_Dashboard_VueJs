@@ -53,8 +53,17 @@
                       md="6"
                       >
                       <v-text-field
-                          v-model="editedItem.identificador_socio"
+                          v-model="editedItem.socio_nombre"
                           label="Nombre"
+                      ></v-text-field>
+                      </v-col>
+                      <v-col
+                      cols="12"
+                      md="6"
+                      >
+                      <v-text-field
+                          v-model="editedItem.socio_identificador"
+                          label="Identificador"
                       ></v-text-field>
                       </v-col>
                       <v-col
@@ -178,7 +187,7 @@ export default {
                 estado: 0
             },
             defaultItem: {
-                 socio_nombre: '',
+                socio_nombre: '',
                 socio_identificador: '',
                 monto: 0,
                 descripcion: '',

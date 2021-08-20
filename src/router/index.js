@@ -9,6 +9,7 @@ import ListaEsepra from '../views/ListaEspera.vue'
 import Venta from '../views/Venta.vue'
 import FichasPrestamo from '../views/FichasPrestamo.vue'
 import FichasRenta from '../views/FichasRenta.vue'
+import RegistroPrestamo from '../views/RegistroPrestamo.vue'
 
 Vue.use(VueRouter)
 
@@ -52,6 +53,11 @@ const routes = [
     path: '/ventas',
     name: 'Venta',
     component: Venta
+  },
+  {
+    path: '/registrar_prestamo',
+    name: 'RegistroPrestamo',
+    component: RegistroPrestamo
   },
   {
     path: '/about',

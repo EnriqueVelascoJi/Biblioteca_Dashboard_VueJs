@@ -53,7 +53,7 @@
                       md="6"
                       >
                       <v-text-field
-                          v-model="editedItem.identificador_socio"
+                          v-model="editedItem.socio_nombre"
                           label="Nombre"
                       ></v-text-field>
                       </v-col>

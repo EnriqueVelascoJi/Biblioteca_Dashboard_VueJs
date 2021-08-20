@@ -64,10 +64,58 @@ export default {
             this.ventas = [
                 {
                     forma_pago: 'Efectivo',
-                    fecha_hora: new Date().getDate(),
+                    fecha_hora: new Date().toString(),
                     impuesto: '18%',
                     total: '242.23'
-                }
+                },
+                {
+                    forma_pago: 'Efectivo',
+                    fecha_hora: new Date().toString(),
+                    impuesto: '18%',
+                    total: '242.23'
+                },
+                {
+                    forma_pago: 'Efectivo',
+                    fecha_hora: new Date().toString(),
+                    impuesto: '18%',
+                    total: '242.23'
+                },
+                {
+                    forma_pago: 'Efectivo',
+                    fecha_hora: new Date().toString(),
+                    impuesto: '18%',
+                    total: '242.23'
+                },
+                {
+                    forma_pago: 'Efectivo',
+                    fecha_hora: new Date().toString(),
+                    impuesto: '18%',
+                    total: '242.23'
+                },
+                {
+                    forma_pago: 'Efectivo',
+                    fecha_hora: new Date().toString(),
+                    impuesto: '18%',
+                    total: '242.23'
+                },
+                {
+                    forma_pago: 'Efectivo',
+                    fecha_hora: new Date().toString(),
+                    impuesto: '18%',
+                    total: '242.23'
+                },
+                {
+                    forma_pago: 'Efectivo',
+                    fecha_hora: new Date().toString(),
+                    impuesto: '18%',
+                    total: '242.23'
+                },
+                {
+                    forma_pago: 'Efectivo',
+                    fecha_hora: new Date().toString(),
+                    impuesto: '18%',
+                    total: '242.23'
+                },
             ]
         }
     }
